@@ -126,7 +126,7 @@ export default function Home(): JSX.Element {
   }
 
   return (
-   <main className="flex justify-evenly bg-gray-200 w-full">
+   <main className="flex justify-evenly bg-gray-200 w-full h-screen">
     <article className="my-auto">
       <h1 className="font-extrabold text-4xl p-4 ">Challenge UF</h1>
     <div className="max-w-md mx-auto border border-black p-4">
@@ -189,7 +189,7 @@ export default function Home(): JSX.Element {
     </div>
     <a href="/grafico" className="text-center font-bold p-2 mt-4 mx-auto">Ver Grafico</a>
     </article>
-    <article className="h-screen overflow-scroll p-4 w-1/3">
+    <article className="overflow-scroll p-4 w-1/2 h-4/5 my-auto">
       {datos && datos.map( dato => (
         <div className={`${dato._id === editar ? 'bg-blue-400' : 'bg-white'} flex gap-2 justify-evenly`} key={dato._id}>
           <p>{formatearComoCLP(dato.valorIndicador)}</p>

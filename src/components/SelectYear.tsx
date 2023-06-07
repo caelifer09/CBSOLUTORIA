@@ -15,7 +15,7 @@ const SelectYear: React.FC<SelectYearProps> = ({ dates, onDateSelected }) => {
   };
 
   return (
-    <select value={selectedYear} onChange={handleYearChange}>
+    <select value={selectedYear} onChange={handleYearChange} className="border border-black">
       <option value="">Selecciona un año</option>
       {dates.map((year, index) => (
         <option key={index} value={year}>

@@ -91,9 +91,11 @@ const Grafico = (): JSX.Element => {
 
   return (
     <div>
-        <a href='/' className="text-black text-2xl">Volver</a>
-        <SelectYear dates={unicos} onDateSelected={handleDateSelected} />
-
+      <h1 className="text-center text-4xl mt-2">GRÁFICO</h1>
+        <div className="flex gap-6 flex-col justify-start p-6 w-1/5">
+          <SelectYear dates={unicos} onDateSelected={handleDateSelected} />
+          <a href='/' className="text-black ">Volver</a>          
+        </div>
         <canvas id="grafico">
         Tu navegador no admite el elemento &lt;canvas&gt;.
         </canvas>
